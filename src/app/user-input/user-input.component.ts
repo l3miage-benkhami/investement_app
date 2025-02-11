@@ -11,10 +11,10 @@ import { InvestementInput } from "../investement-input.model";
 })
 export class UserInputComponent {
   @Output() calculateEvent = new EventEmitter<InvestementInput>();
-  initialInvestement = "0";
-  annualInvestement = "0";
-  expectedReturn = "0";
-  duration = "0";
+  initialInvestement = "5000";
+  annualInvestement = "12000";
+  expectedReturn = "6";
+  duration = "10";
   onSubmit() {
     this.calculateEvent.emit({
       initialInvestment: +this.initialInvestement,
